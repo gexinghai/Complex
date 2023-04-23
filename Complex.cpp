@@ -75,13 +75,12 @@ istream& operator>>(istream& cin, Complex& c) {
 ostream& operator<<(ostream& cout, Complex& c) {
     cout << c.real;
     if (c.imag > 0) {
-        cout << '+';
-        cout << c.imag;
+        cout << '+' << c.imag << 'i';
     }
     else if (c.imag < 0) {
-        cout << c.imag;
+        cout << c.imag << 'i';
     }
-    cout << 'i';
+    cout << endl;;
     return cout;
 }
 
